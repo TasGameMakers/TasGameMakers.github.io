@@ -155,7 +155,7 @@ main__dark
             
             <script>
               (function() {
-                var stripe = Stripe('pk_test_OvLVEWNNaVW7D8zvFgzfrgDt00LYJTs8ta');
+                var stripe = Stripe('pk_live_wk7uF6ktlUtDLwT3IjbJRkZc00Re5EMjz0');
               
                 function checkout(price_id, mode, redirect) {
                   stripe.redirectToCheckout({
@@ -184,14 +184,14 @@ main__dark
                 checkoutSubscriptionButton.addEventListener('click', function () {
                   // When the customer clicks on the button, redirect
                   // them to Checkout.
-                  checkout("plan_GFRxfIZY3djEIS", 'subscription', 'http://tasgamemakers.com/membership/success/')
+                  checkout("plan_IVG5clzUMVACbb", 'subscription', 'http://tasgamemakers.com/membership/success/')
                 });
               
               var checkoutPayItForwardButton = document.getElementById('checkout-button-price_1HqaAPDlEsKw5erege7kHS75');
                 checkoutPayItForwardButton.addEventListener('click', function () {
                   // When the customer clicks on the button, redirect
                   // them to Checkout.
-                  checkout("price_1HqaAPDlEsKw5erege7kHS75", 'payment', 'http://tasgamemakers.com/membership/pay-it-forward/')
+                  checkout("price_1HuFeMDlEsKw5ereEfstsYjO", 'payment', 'http://tasgamemakers.com/membership/pay-it-forward/')
                 });
               
               })();
