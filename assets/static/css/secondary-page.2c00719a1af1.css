@@ -92,3 +92,8 @@
     padding: 0 var(--padding-lg);
   }
 }
+
+.secondary-page .mc-field-group input {
+  background-color: var(--white);
+  color: var(--black);
+}

@@ -49,7 +49,7 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'UA-149359508-1');
-        </script>        
+        </script>
     </head>
 
     <body class="">
@@ -118,27 +118,17 @@ main__dark
           
 <div class="secondary-page">
   <div class="secondary-page--container">
-    <h1 class="secondary-page--heading">Membership</h1>
+    <h1 class="secondary-page--heading">Thank you!</h1>
     <div class="secondary-page--content">
-      <div><div class="rich-text"><h2><b>Benefits</b></h2><p><b>Along with running events and providing platforms for community interaction, TasGM offers individual memberships which give access to a range of benefits.</b></p><h3></h3><h3><b>GDC Vault Access</b></h3><p>The Game Developers Conference is the largest gathering of industry professionals that happens in the US each year. The <a href="https://www.gdcvault.com/">GDC Vault</a> is an archive of talks and slides from the past 20 years of the conference, containing valuable insight, experiences, and technical learnings from practitioners all over the world. Thanks to support from Screen Tasmania, TasGM proudly offers access to this vault for members.</p><h3></h3><h3><b>Member only events + initiatives</b></h3><p>TasGM hosts member-only events that offer the chance to meet other makers and practitioners in the industry. Help boost your career and skillset by learning from those active in the industry.</p><h3></h3><h3><b>Have your say</b></h3><p>Members are required to attend TasGM’s Annual General Meeting (AGM). Stay up to date with industry news and opportunities and get involved. Members vote in the board members of TasGM, helping to steer it in the direction the community wants most.</p><p></p><p><b><i>Plus a lot more, coming soon!</i></b></p><p></p><p></p></div>
-<div class="rich-text"><h2></h2><h2><b>Membership fees</b></h2><p>A TasGM membership costs $20 per year, and can purchased by following the steps below.</p><p>If you are unable to afford membership, please email hello@tasgamemakers.com or a member of the board and they can hook you up!</p><h3></h3><h3><b>Pay it forward</b></h3><p>If you would like to purchase TasGM memberships to be passed on to other makers who may not be as fortunate, please email us at hello@tasgamemakers.com or a member of the board to organise custom payments.</p><p>Membership fees go towards a range of things: stipends to compensate the time of some of our volunteers who are providing a service (setting up streaming / recording), budgets for event catering, venue hire, making an event bigger (game jams, let’s plays) etc.</p><p></p><p></p></div>
-<div class="rich-text"><h2></h2><h2><b>Becoming a member</b></h2><p>Your membership is valid for 12 months, and gives access to the benefits listed above.</p><p>You can also purchase a 12-month membership for a future member, as part of our pay-it-forward initiative!</p>
 
-<div class="stripe-checkout-buttons">
-  <button id="checkout-button-plan_GFRxfIZY3djEIS" role="link" type="button" class="stripe-checkout">
-    Subscribe ($20 / year, cancel any time)
-  </button>
+        <div class="rich-text">
 
-  <button id="checkout-button-price_1HqaAPDlEsKw5erege7kHS75" role="link" type="button" class="stripe-checkout">
-    Purchase A Pay-It-Forward Membership ($20, one time)
-  </button>
+        <p>Welcome to Tas Game Makers! We're thrilled to have you as a part of our community.</p>
+      
+        <p>We've just sent you an email, containing info on how to access your membership benefits. If you haven't received it, please <a href="mailto:hello@tasgamemakers.com">shoot us an email</a> and we'll sort it out.</p>
 
-  <div id="error-message"></div>
-
-</div>
-</div>
-
-</div>
+        <p>See you soon!</p>
+    </div>
     </div>
   </div>
 </div>
@@ -153,49 +143,7 @@ main__dark
             
             <script src="https://js.stripe.com/v3/"></script>
             
-            <script>
-              (function() {
-                var stripe = Stripe('pk_test_OvLVEWNNaVW7D8zvFgzfrgDt00LYJTs8ta');
-              
-                function checkout(price_id, mode, redirect) {
-                  stripe.redirectToCheckout({
-                      lineItems: [{price: price_id, quantity: 1}],
-                      billingAddressCollection: 'required',
-                      mode: mode,
-                      // Do not rely on the redirect to the successUrl for fulfilling
-                      // purchases, customers may not always reach the success_url after
-                      // a successful payment.
-                      // Instead use one of the strategies described in
-                      // https://stripe.com/docs/payments/checkout/fulfill-orders
-                      successUrl: redirect,
-                      cancelUrl: 'http://tasgamemakers.com/membership/',
-                    })
-                    .then(function (result) {
-                      if (result.error) {
-                        // If `redirectToCheckout` fails due to a browser or network
-                        // error, display the localized error message to your customer.
-                        var displayError = document.getElementById('error-message');
-                        displayError.textContent = result.error.message;
-                      }
-                    });
-                }
-              
-                var checkoutSubscriptionButton = document.getElementById('checkout-button-plan_GFRxfIZY3djEIS');
-                checkoutSubscriptionButton.addEventListener('click', function () {
-                  // When the customer clicks on the button, redirect
-                  // them to Checkout.
-                  checkout("plan_GFRxfIZY3djEIS", 'subscription', 'http://tasgamemakers.com/membership/success/')
-                });
-              
-              var checkoutPayItForwardButton = document.getElementById('checkout-button-price_1HqaAPDlEsKw5erege7kHS75');
-                checkoutPayItForwardButton.addEventListener('click', function () {
-                  // When the customer clicks on the button, redirect
-                  // them to Checkout.
-                  checkout("price_1HqaAPDlEsKw5erege7kHS75", 'payment', 'http://tasgamemakers.com/membership/pay-it-forward/')
-                });
-              
-              })();
-              </script>
+        
     </body>
 
 
