@@ -157,9 +157,10 @@ main__dark
               (function() {
                 var stripe = Stripe('pk_live_wk7uF6ktlUtDLwT3IjbJRkZc00Re5EMjz0');
               
-                function checkout(price_id, mode, redirect) {
+                function checkout(price_id, mode, redirect, needs_shipping_address) {
                   stripe.redirectToCheckout({
                       lineItems: [{price: price_id, quantity: 1}],
+                      shippingAddressCollection: needs_shipping_address ? {allowedCountries: ['AU']} : undefined,
                       billingAddressCollection: 'required',
                       mode: mode,
                       // Do not rely on the redirect to the successUrl for fulfilling
@@ -184,14 +185,14 @@ main__dark
                 checkoutSubscriptionButton.addEventListener('click', function () {
                   // When the customer clicks on the button, redirect
                   // them to Checkout.
-                  checkout("plan_IVG5clzUMVACbb", 'subscription', 'http://tasgamemakers.com/membership/success/')
+                  checkout("plan_IVG5clzUMVACbb", 'subscription', 'http://tasgamemakers.com/membership/success/', true)
                 });
               
               var checkoutPayItForwardButton = document.getElementById('checkout-button-price_1HqaAPDlEsKw5erege7kHS75');
                 checkoutPayItForwardButton.addEventListener('click', function () {
                   // When the customer clicks on the button, redirect
                   // them to Checkout.
-                  checkout("price_1HuFeMDlEsKw5ereEfstsYjO", 'payment', 'http://tasgamemakers.com/membership/pay-it-forward/')
+                  checkout("price_1HuFeMDlEsKw5ereEfstsYjO", 'payment', 'http://tasgamemakers.com/membership/pay-it-forward/', false)
                 });
               
               })();
