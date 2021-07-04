@@ -135,7 +135,13 @@
             src="/assets/static/js/mysite.90fdc5a80c4a.js"
         ></script>
 
-        <script src="https://js.stripe.com/v3/"></script>
+        {%- if script %}
+        <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+        <script
+            type="text/javascript"
+            src="/assets/static/js/{{script}}"
+        ></script>
+        {%- endif -%}
     </body>
 
     <footer class="footer" role="contentinfo">
