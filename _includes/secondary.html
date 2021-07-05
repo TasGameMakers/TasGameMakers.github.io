@@ -1,0 +1,25 @@
+---
+layout: "wrapper"
+---
+
+<!-- prettier-ignore -->
+{%- unless banner %}
+{%- assign banner = "banner.c07521c0b39d.png" -%}
+{%- endunless -%}
+
+{%- unless heading %}
+{%- assign heading = title -%}
+{%- endunless -%}
+
+<div class="banner">
+    <img src="/assets/static/images/{{banner}}" />
+</div>
+
+<div class="secondary-page">
+    <div class="secondary-page--container">
+        {%- if page.url == "/events/" %} {{content}} {%- else -%}
+        <h1 class="secondary-page--heading">{{heading}}</h1>
+        <div class="secondary-page--content">{{content}}</div>
+        {%- endif -%}
+    </div>
+</div>
