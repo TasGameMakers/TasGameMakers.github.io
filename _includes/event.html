@@ -1,0 +1,41 @@
+---
+layout: "wrapper"
+---
+
+<!-- prettier-ignore -->
+{%- unless bannerUrl %}
+{%- assign bannerUrl = "banner.c07521c0b39d.png" -%}
+{%- endunless -%}
+
+{%- unless bannerAlt %}
+{%- assign bennerAlt = "Tas Game Makers" -%}
+{%- endunless -%}
+
+{%- unless heading %}
+{%- assign heading = title -%}
+{%- endunless -%}
+
+<div class="banner">
+    <img alt="{{bannerAlt}}" src="/assets/media/images/{{bannerUrl}}" />
+</div>
+
+<div class="secondary-page">
+    <div class="secondary-page--container">
+        <div class="secondary-page--intro">
+            <a class="secondary-page--back" href="/events/">< Back to events</a>
+            <div class="secondary-page--intro-cta">
+                <h1 class="secondary-page--heading">{{heading}}</h1>
+            </div>
+            <p class="secondary-page--subtitle">{{subtitle}}</p>
+            <div class="info-pairs">
+                <div class="info-pair">
+                    <p class="info-pair--label">Date:</p>
+                    <p class="info-pair--value">{{eventDate}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="secondary-page--content">
+            <div class="rich-text">{{content}}</div>
+        </div>
+    </div>
+</div>
