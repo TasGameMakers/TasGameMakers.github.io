@@ -1,0 +1,70 @@
+# This data is used to populate the contents on /about-us. 
+#
+# See _pages/about-us.md and _layouts/board.html for more information.
+#
+# Notes:
+#
+# * Entries will be displayed at /about-us in the order that the appear in
+#   this file.
+# * 'image' is the filename of an image located in /assets/media/images.
+# * 'twitter' should be a twitter username, without the '@'.
+
+- name: Kristy de Salas
+  position: President
+  twitter: GiantKristy
+
+- name: Drew Van Schoonhoven
+  position: Vice President
+  twitter: ScoobyDrewAU
+  bio: |
+    Drew has experience in event management, business ownership and was a founding member of AV Con (Adelaide' s Anime and Video Convention (www.avcon.org.au), in a past life. He currently resides in Launceston, and studies game design and 3D animation.
+    
+    "I'm very proud with what Tas Game Makers has already achieved, and I am excited for the future. My goal is to be as inclusive and supportive of Tasmanian's across the state and doing all I can to getting more people involved in making games."
+  image: profileImages_drew.2e16d0ba.fill-600x600-c100.jpg
+
+
+- name: Jon Manning
+  position: Treasurer
+  bio: I'm the co-founder of Secret Lab, an indie game developer based in Hobart! I'm best known for my work on Night in the Woods, and for building the narrative tool Yarn Spinner. I'm the treasurer of Tas Game Makers, and I'm here to make sure that the association provides a useful foundation for the Tasmanian game development industry.
+  twitter: desplesda
+  image: profileImages_jon.2e16d0ba.fill-600x600-c100.jpg
+
+- name: Tim Nugent
+  position: Secretary
+  twitter: The_McJones
+  bio: | 
+    Originally I was a scarecrow brought to life by a curse and had to work out how best to be a person. I long for a return to silently guarding sorghum from birds so towards that end I have been a part of numerous societies and even got a PhD.
+
+    I've come to the conclusion making games is the best way to achieve my goal and as one of those weird Tasmanians who moved here instead of being born here it is impressive to have watched Tassie's growth. It is now the best place to make games and I want to make that known to all.
+  image: profileImages_tim.2e16d0ba.fill-600x600-c100.jpg
+
+
+- name: Jason Imms
+  position: General Board Member
+  twitter: jasonimms
+  bio: |
+    Jason is one of the founders of Tas Game Makers, and has worked in and around the games industry for more than six years, as a journalist and quality assurance consultant.
+
+    He is a board member and awards chair for the Freeplay Independent Games Festival, assesses game funding applications for Film Victoria, and sits on the Tasmanian Ministerial Arts and Cultural Advisory Council. He brings an experienced perspective and strong network to Tas Game Makers, and passion for a healthy and confident local Tasmanian scene.
+  image: profileImages_jason.2e16d0ba.fill-600x600-c100.jpg
+
+- name: Eliah Woolley
+  position: General Board Member
+  twitter: eliahwooley
+  bio: |
+    My skills and perspective is that of a university student studying in the games and creative technology area. I hope to provide a fresh perspective of someone who has not yet been working in the area to allow insight into some of the differences between newcomers and people already working in the area and how we can all help each other with our goals.
+
+    To do this I plan to focus on helping to grow our community so upcoming and established game creators can collaborate.
+  image: profileImages_eliah.2e16d0ba.fill-600x600-c100.jpg
+
+- name: Sebastian Roberts
+  position: General Board Member
+  twitter: sebroberts_
+  bio: I co-founded Two19, a creative and passionate studio developing tabletop games in Southern Tasmania. My background is in marketing, having been involved with several tech startups both locally in Australia and the UK. I'm excited to support the growth of the Tasmania game industry through TasGM, not only for digital games but for tabletop games too.
+  image: profileImages_sebastianr.jpg 
+  
+- name: Dean Baron
+  position: General Board Member
+  twitter: devdottemp
+  bio: After sitting on the board as one of the interim members, I have joined the TasGM board again to focus my time on supporting and helping creatives in the state. Based up north in Launceston, I have a real passion and drive to grow the state to the best it can be, as the founder of Smash Attack Studios, I intend to share everything I have learned in my history as a game developer to help others achieve their own goals.
+  

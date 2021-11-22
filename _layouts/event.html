@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% include page_banner.html %}
+
+<div class="secondary-page">
+
+    <div class="secondary-page--container">
+
+        <div class="secondary-page--intro">
+            <a class="secondary-page--back" href="/events/">&lt; Back to events</a>
+
+            <h1 class="secondary-page--heading">{{page.title | escape}} </h1>
+        
+
+            <p class="secondary-page--subtitle">
+                {{ page.summary }}
+            </p>
+
+            <div class="info-pairs">
+                <div class="info-pair">
+                    <p class="info-pair--label">Date:</p>
+                    <p class="info-pair--value">{{ page.date | date: "%A, %B %e, %Y" }}</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="secondary-page--content">
+            <div class="rich-text">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>

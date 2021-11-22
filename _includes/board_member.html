@@ -1,0 +1,20 @@
+<div class="profile profile__dark-purple">
+    <div class="profile--content">
+        <h5 class="profile--position">{{member.position}}</h5>
+        <h4 class="profile--name">{{member.name}}</h4>
+        <a class="profile--twitter" href="https://twitter.com/{{member.twitter}}">
+            <image src="/assets/static/images/twitter.3763bb7891ed.svg" />
+            <span>@{{ member.twitter }}</span>
+        </a>
+        <div class="profile--description">
+            <div class="rich-text">
+                {{ member.bio | markdownify }}
+            </div>
+        </div>
+    </div>
+    {% if member.image %}
+    <div class="profile--image">
+        <img alt="A photo of {{ member.name }}" height="600" src="/assets/media/images/{{ member.image }}" width="600">
+    </div>
+    {% endif %}
+</div>
