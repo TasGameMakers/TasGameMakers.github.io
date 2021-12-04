@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Refresh" content="0; url='{{page.redirect_url}}'" />
+    <meta http-equiv="Refresh" content="0; url='{{site[page.redirect_url]}}'" />
     <title>{{ site.title }} Redirect</title>
 </head>
 
 <body>
-    You are being redirected <a href="{{page.redirect_url}}">here</a>.
+    You are being redirected <a href="{{ site[page.redirect_url] }}">here</a>.
 </body>
 
 </html>
