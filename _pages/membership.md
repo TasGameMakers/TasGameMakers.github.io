@@ -40,3 +40,9 @@ Your membership is valid for 12 months, and gives access to the benefits listed 
 You can also purchase a 12-month membership for a future member, as part of our pay-it-forward initiative!
 
 {%- include membership_create.html -%}
+
+## Manage Existing Membership
+
+If you're already a member and you want to update your billing information, please enter the email address that you used to sign up to Tas Game Makers, and we'll send you a link to manage your details.
+
+{%- include membership_manage.html -%}

@@ -34,6 +34,10 @@ header_pages:
   - _pages/code-of-conduct.md
   - _pages/about-us.md
 
+# the API endpoint that users can POST an email to and receive via mail a link
+# to manage their billing info (if that email is for a valid member)
+manage_membership_endpoint: https://tasgamemakers.azurewebsites.net/api/get_portal_link 
+
 # Build settings
 theme: minima
 plugins:
