@@ -1,26 +1,19 @@
----
-layout: page
----
 
-{{ content }}
 
-{% comment %}
-Membership page layouts include the buttons for subscribing and
-purchasing a pay-it-forward, and also include the Stripe control logic.
-{% endcomment %}
+<p>
+    <div class="stripe-checkout-buttons">
+        <button id="checkout-button-plan_GFRxfIZY3djEIS" role="link" type="button" class="stripe-checkout">
+            Subscribe ($20 / year, cancel any time)
+        </button>
 
-<div class="stripe-checkout-buttons">
-    <button id="checkout-button-plan_GFRxfIZY3djEIS" role="link" type="button" class="stripe-checkout">
-        Subscribe ($20 / year, cancel any time)
-    </button>
+        <button id="checkout-button-price_1HqaAPDlEsKw5erege7kHS75" role="link" type="button" class="stripe-checkout">
+            Purchase A Pay-It-Forward Membership ($20, one time)
+        </button>
 
-    <button id="checkout-button-price_1HqaAPDlEsKw5erege7kHS75" role="link" type="button" class="stripe-checkout">
-        Purchase A Pay-It-Forward Membership ($20, one time)
-    </button>
+        <div id="error-message"></div>
 
-    <div id="error-message"></div>
-
-</div>
+    </div>
+</p>
 
 <script>
     (function () {

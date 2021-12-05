@@ -1,6 +1,6 @@
 ---
 title: Membership
-layout: membership
+layout: page
 ---
 
 ## Benefits
@@ -38,3 +38,5 @@ Membership fees go towards a range of things: stipends to compensate the time of
 Your membership is valid for 12 months, and gives access to the benefits listed above.
 
 You can also purchase a 12-month membership for a future member, as part of our pay-it-forward initiative!
+
+{%- include membership_create.html -%}
