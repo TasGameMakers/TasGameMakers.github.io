@@ -9,19 +9,21 @@
 # * 'image' is the filename of an image located in /assets/media/images.
 # * 'twitter' should be a twitter username, without the '@'.
 
-- name: Kristy de Salas
+- name: Paris Buttfield-Addison
   position: President
-  twitter: Giant_Kristy
-
-- name: Drew Van Schoonhoven
-  position: Vice President
-  twitter: ScoobyDrewAU
+  twitter: parisba
+  image: profileImages_Paris.jpg
   bio: |
-    Drew has experience in event management, business ownership and was a founding member of AV Con (Adelaide' s Anime and Video Convention (www.avcon.org.au), in a past life. He currently resides in Launceston, and studies game design and 3D animation.
-    
-    "I'm very proud with what Tas Game Makers has already achieved, and I am excited for the future. My goal is to be as inclusive and supportive of Tasmanian's across the state and doing all I can to getting more people involved in making games."
-  image: profileImages_drew.2e16d0ba.fill-600x600-c100.jpg
-
+    I’m the co-founder of Secret Lab, a game development studio based in
+    beautiful Hobart, Tasmania, Australia. Secret Lab works on games and game
+    development tools, including the award-winning ABC Play School iPad games,
+    BAFTA- and IGF-winning Night in the Woods, the Qantas Joey Playbox, and the
+    popular open source Yarn Spinner narrative game framework. I formerly
+    worked as a software engineer, and product manager for Meebo, which was
+    acquired by Google in 2012. I have a degree in medieval history, a PhD in
+    Computing, and write technical books on machine learning, programming, and
+    game development for O’Reilly Media. I can be found on Twitter [@parisba](https://twitter.com/parisba) and
+    online at [http://paris.id.au](http://paris.id.au).
 
 - name: Jon Manning
   position: Treasurer
@@ -38,10 +40,19 @@
     I've come to the conclusion making games is the best way to achieve my goal and as one of those weird Tasmanians who moved here instead of being born here it is impressive to have watched Tassie's growth. It is now the best place to make games and I want to make that known to all.
   image: profileImages_tim.2e16d0ba.fill-600x600-c100.jpg
 
+- name: Drew Van Schoonhoven
+  position: General Board Member
+  twitter: ScoobyDrewAU
+  bio: |
+    Drew has experience in event management, business ownership and was a founding member of AV Con (Adelaide' s [Anime and Video Convention](http://www.avcon.org.au), in a past life. He currently resides in Launceston, and studies game design and 3D animation.
+    
+    "I'm very proud with what Tas Game Makers has already achieved, and I am excited for the future. My goal is to be as inclusive and supportive of Tasmanian's across the state and doing all I can to getting more people involved in making games."
+  image: profileImages_drew.2e16d0ba.fill-600x600-c100.jpg
 
 - name: Jason Imms
   position: General Board Member
   twitter: jasonimms
+  is_past: true
   bio: |
     Jason is one of the founders of Tas Game Makers, and has worked in and around the games industry for more than six years, as a journalist and quality assurance consultant.
 
@@ -62,6 +73,7 @@
   twitter: askseb
   bio: I co-founded Two19, a creative and passionate studio developing tabletop games in Southern Tasmania. My background is in marketing, having been involved with several tech startups both locally in Australia and the UK. I'm excited to support the growth of the Tasmania game industry through TasGM, not only for digital games but for tabletop games too.
   image: profileImages_sebastianr.jpg 
+  is_past: true
 
 - name: Leo Febey
   image: profileImages_Leo.jpg
@@ -74,3 +86,7 @@
   twitter: devdottemp
   bio: After sitting on the board as one of the interim members, I have joined the TasGM board again to focus my time on supporting and helping creatives in the state. Based up north in Launceston, I have a real passion and drive to grow the state to the best it can be, as the founder of Smash Attack Studios, I intend to share everything I have learned in my history as a game developer to help others achieve their own goals.
   
+- name: Kristy de Salas
+  position: President
+  twitter: Giant_Kristy
+  is_past: true
