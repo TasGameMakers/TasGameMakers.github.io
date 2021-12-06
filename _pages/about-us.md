@@ -16,6 +16,19 @@ Tas Game Makers was originally launched as the Tasmanian Game Development Societ
 
 TasGM is an incorporated association run by a board of community members. Our board members are all passionate about game making, and contribute a range of skillsets and perspectives.
 
-{% for member in site.data.board %}
+{% assign current_board = site.data.board | where_exp: "item", "item.is_past != true" %}
+{% assign past_board = site.data.board | where_exp: "item", "item.is_past == true" %}
+
+{% for member in  current_board %}
 {% include board_member.html member=member %}
+{% endfor %}
+
+### Past Board Members
+
+{% for member in past_board %}
+{% if member.twitter %}
+* {{member.name}} ([@{{member.twitter}}](https://twitter.com/{{member.twitter}}))
+{% else %}
+* {{member.name}} 
+{% endif %}
 {% endfor %}
