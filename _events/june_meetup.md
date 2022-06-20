@@ -6,7 +6,7 @@ category: jam
 image: TasjamLite_4.d2b1c565.fill-800x700-c100.png
 ---
 
-Join us at the Replay Bar in Hobart ([Level 1, 31 Elizabeth Mall, Hobart](https://goo.gl/maps/Qbh4QY78GM4vTMiN6) at 5PM on Friday the 24th for a chill social event with your friends and colleagues from the Tasmanian Game Makers community! 
+Join us at the Replay Bar in Hobart ([Level 1, 37 Elizabeth Mall, Hobart](https://goo.gl/maps/Qbh4QY78GM4vTMiN6) at 5PM on Friday the 24th for a chill social event with your friends and colleagues from the Tasmanian Game Makers community! 
 
 No talks, no pressure - we're just saying hello and getting out there again!
 
