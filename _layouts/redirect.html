@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% assign image_name = page.image | default: "tasgamemakers-socialcard.png" %}
+{% assign image_url = "/assets/static/images/" | append: image_name | absolute_url %}
+{% assign description = content | strip_html |  strip %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Refresh" content="0; url='{{site[page.redirect_url]}}'" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TasGameMakers" />
+    <meta name="twitter:creator" content="@TasGameMakers" />
+    <meta property="og:url" content="{{ site[page.redirect_url] }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="twitter:image" content="{{ image_url }}" />
+    <meta property="twitter:image:alt" content="{{ page.title }}" />
+    <meta property="og:image" content="{{ page.image }}" />
     <title>{{ site.title }} Redirect</title>
 </head>
 
