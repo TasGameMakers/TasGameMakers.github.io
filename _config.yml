@@ -72,6 +72,8 @@ collections:
   events:
     output: true # Make these items generate documents
 
+# Build all posts, including ones with a date in the future.
+future: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
