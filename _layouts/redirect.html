@@ -4,16 +4,17 @@
 {% assign image_name = page.image | default: "tasgamemakers-socialcard.png" %}
 {% assign image_url = "/assets/static/images/" | append: image_name | absolute_url %}
 {% assign description = content | strip_html |  strip %}
+{% assign redirect_url = page.redirect_url | default: site[page.redirect_name] %}
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Refresh" content="0; url='{{site[page.redirect_url]}}'" />
+    <meta http-equiv="Refresh" content="0; url='{{ redirect_url }}'" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@TasGameMakers" />
     <meta name="twitter:creator" content="@TasGameMakers" />
-    <meta property="og:url" content="{{ site[page.redirect_url] }}" />
+    <meta property="og:url" content="{{ redirect_url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:description" content="{{ description }}" />
     <meta property="og:description" content="{{ description }}" />
@@ -24,7 +25,7 @@
 </head>
 
 <body>
-    You are being redirected <a href="{{ site[page.redirect_url] }}">here</a>.
+    You are being redirected <a href="{{ redirect_url }}">here</a>.
 </body>
 
 </html>
